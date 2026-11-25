@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selamat Guru Bu Aida</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background: linear-gradient(135deg, #fce4ec, #fff3e0);
+  color: #694b46;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 25px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 10px 30px #0002;
+}
+
+.flower {
+  font-size: 55px;
+}
+
+h1 {
+  color: #c45b78;
+  font-size: 32px;
+}
+
+p {
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+button {
+  background: #c45b78;
+  color: white;
+  border: none;
+  padding: 13px 25px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+#pesan {
+  display: none;
+  margin-top: 20px;
+  animation: muncul 1s;
+}
+
+@keyframes muncul {
+  from {opacity: 0; transform: translateY(15px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+  <div class="flower">🌷💐🌷</div>
+
+  <h1>Selamat Hari Guru!</h1>
+
+  <p>
+    Untuk bu aida tercinta,
+    terima kasih telah menjadi guru
+    yang sabar dalam membimbing kami.
+  </p>
+
+  <button onclick="bukaPesan()">
+    Buka Pesan Spesial ❤️
+  </button>
+
+  <div id="pesan">
+    <h2>Terima Kasih, Bu Aida</h2>
+    <p>
+      Selamat Hari Guru, Bu Aida.
+      Semoga setiap lelah dan ilmu 
+      yang Ibu ajarkan 
+      kepada kami menjadi amal 
+      jariyah yang pahalanya terus 
+      mengalir tanpa henti.
+
+      Kami doakan semoga Allah selalu 
+      melimpahkan kesehatan, 
+      keberkahan umur,
+      dan kebahagiaan untuk 
+      Ibu beserta keluarga.
+    </p>
+    <h3>❤️ Kami Sayang Bu Aida ❤️</h3>
+  </div>
+</div>
+
+<script>
+function bukaPesan() {
+  document.getElementById("pesan").style.display = "block";
+}
+</script>
+
+</body>
+</html>
